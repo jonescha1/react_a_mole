@@ -15,6 +15,7 @@ function App() {
     }
     return <div>{hills}</div>;
   };
+
   return (
     <div className="App">
       <h1>React-a-Mole!</h1>
