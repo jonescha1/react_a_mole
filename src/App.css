@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-basis: 10%;
+}
+
+.bottom {
+  flex-basis: 90%;
+}
+
+.gameContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.moleContainer div {
   text-align: center;
+}
+
+.moleContainer img {
+  max-width: 150px;
 }

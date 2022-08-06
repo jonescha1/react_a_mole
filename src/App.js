@@ -13,14 +13,17 @@ function App() {
     for (let i = 0; i < 9; i++) {
       hills.push(<MoleContainer setScore={setScore} score={score} key={i} />);
     }
-    return <div>{hills}</div>;
+    return <div className="gameContainer">{hills}</div>;
   };
 
   return (
     <div className="App">
-      <h1>React-a-Mole!</h1>
-      {score}
-      {createMoleHill()}
+      <div className="heading">
+        <h1>React-a-Mole!</h1>
+        <h2>Score: {score}</h2>
+      </div>
+
+      <div className="bottom">{createMoleHill()}</div>
     </div>
   );
 }
